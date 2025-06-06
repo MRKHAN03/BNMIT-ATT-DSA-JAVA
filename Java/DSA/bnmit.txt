@@ -1,0 +1,7 @@
+We are learning FileHandling in JAVA
+We are in BNMIT S -Block
+This is our final year of Engineering , 7th sem
+And super 60 program Advanced Technical Training.
+The year is 2025
+
+We will write into File now
