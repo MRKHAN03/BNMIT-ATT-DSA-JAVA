@@ -1,7 +1,5 @@
 package DataStructures.NonLinear.trees.interviewQuestions;
 
-import DataStructures.NonLinear.trees.traversals.dfs.TreeNode;
-
 public class MirrorOfBinarytTree {
 
     int data;

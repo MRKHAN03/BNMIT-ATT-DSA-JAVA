@@ -1,5 +1,8 @@
 package DataStructures.NonLinear.trees.interviewQuestions;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Node2{
     int data;
     Node2 left;
@@ -33,6 +36,25 @@ public class LeftRightView {
         }
     }
 
+
+    public static void printLeftView(Node2 root){
+        if(root==null){
+            return;
+        }
+        Queue<Node2> q = new LinkedList<>();
+        q.add(root);
+        while (!q.isEmpty()){
+            int levelSize = q.size();
+            for(int i = 0 ;i<levelSize;i++){
+                Node2 node = q.poll();
+                if(i==0) System.out.print(node.data + " ");
+                if(node.left!=null) q.add(node.left);
+                if(node.right!=null) q.add(node.right);
+            }
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         Node2 root = new Node2(1);
         root.left = new Node2(2);
@@ -47,6 +69,16 @@ public class LeftRightView {
         System.out.println();
         System.out.print("Right View: ");
         rv(root);
+        System.out.println();
 
+
+
+        Node2 root2 = new Node2(1);
+        root2.left = new Node2(2);
+        root2.right = new Node2(3);
+        root2.left.right = new Node2(4);
+        root2.right.right = new Node2(5);
+        root2.right.right.right = new Node2(8);
+        printLeftView(root2);
     }
 }

@@ -2,8 +2,8 @@ package DataStructures.NonLinear.trees.interviewQuestions;
 
 class Node1{
     int data;
-    Node1 left;
-    Node1 right;
+    Node4 left;
+    Node4 right;
 
     Node1(int x){
         data = x;
@@ -12,7 +12,7 @@ class Node1{
 }
 
 public class IdenticalTrees {
-    static boolean areIdentical(Node1 t1 , Node1 t2){
+    static boolean areIdentical(Node4 t1 , Node4 t2){
         if(t1==null && t2==null){
             return true;
         }
@@ -28,21 +28,21 @@ public class IdenticalTrees {
     }
 
     public static void main(String[] args) {
-        Node1 t1 = new Node1(1);
-        t1.left = new Node1(2);
-        t1.right = new Node1(3);
+        Node4 t1 = new Node4(1);
+        t1.left = new Node4(2);
+        t1.right = new Node4(3);
 
-        Node1 t2 = new Node1(1);
-        t2.left = new Node1(2);
-        t2.right = new Node1(3);
+        Node4 t2 = new Node4(1);
+        t2.left = new Node4(2);
+        t2.right = new Node4(3);
 
-        Node1 t3 = new Node1(1);
-        t3.left = new Node1(3);
-        t3.right = new Node1(3);
+        Node4 t3 = new Node4(1);
+        t3.left = new Node4(3);
+        t3.right = new Node4(3);
 
-        Node1 t4 = new Node1(1);
-        t4.left = new Node1(2);
-        t4.right = new Node1(3);
+        Node4 t4 = new Node4(1);
+        t4.left = new Node4(2);
+        t4.right = new Node4(3);
 
         System.out.println("Are t1  and t2 identical ? : "+ areIdentical(t1,t2));
         System.out.println("Are t3  and t4 identical ? : "+ areIdentical(t3,t4));
