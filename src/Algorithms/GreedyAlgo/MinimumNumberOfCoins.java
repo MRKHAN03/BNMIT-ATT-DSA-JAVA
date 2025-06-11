@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MinimumnumberOfCoins {
+public class MinimumNumberOfCoins {
 
     static void  findMinCoins(List<Integer> coins , int V){
 
