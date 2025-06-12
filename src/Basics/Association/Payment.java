@@ -1,4 +1,4 @@
-package Association;
+package Basics.Association;
 
 public class Payment {
     double regFees,admFees , balAmt;
