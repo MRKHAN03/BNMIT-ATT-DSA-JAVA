@@ -26,7 +26,7 @@ public class NumberOfIslands {
     void dfs(int x , int y , char[][] grid , boolean[][] visited , int n, int m){
         visited[x][y]=true;
         //8 directions
-        for(int dir = 0 ; dir<7;dir++){
+        for(int dir = 0 ; dir<7 ;dir++){
             int newX = x+dx[dir];
             int newY = y+dy[dir];
 
